@@ -15,6 +15,8 @@ if [ -z "$TARGET_BRANCH" ]; then
   echo "Please set TARGET_BRANCH"
   exit 1
 fi
+
+echo "TARGET BRANCH: ${TARGET_BRANCH}";
 # Look which is the default branch
 #TARGET_BRANCH=`curl --silent "${HOST}${CI_PROJECT_ID}" --header "PRIVATE-TOKEN:${GITLAB_PRIVATE_TOKEN}" | jq --raw-output '.default_branch'`;
 
